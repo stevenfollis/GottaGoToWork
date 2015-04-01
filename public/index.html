@@ -1,39 +1,48 @@
 ﻿<!DOCTYPE html>
 <html lang="en" ng-app="app">
 <head>
-    <meta charset="UTF-8">
-    <title>Bilastrator @ Work</title>
+	<meta charset="UTF-8">
+	<title>Bilastrator @ Work</title>
 
-    <!-- CSS -->
-    <!--<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<!-- Application Insights -->
+	<script type="text/javascript">
+		var appInsights = window.appInsights || function (config) {
+			function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+		}({
+			instrumentationKey: "ea92d520-9a63-4894-a86e-57fb8ae66fd1"
+		});
+
+		window.appInsights = appInsights;
+		appInsights.trackPageView();
+	</script>
 
 </head>
 <body ng-controller="HomeController">
 
-    <a href="https://github.com/stevenfollis/GottaGoToWork"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+	<a href="https://github.com/stevenfollis/GottaGoToWork"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
 
-    <a class="tweet" ng-href="https://twitter.com/jaybilas/status/{{tweet.id_str}}" target="_blank" data-fittext data-fittext-nl data-fittext-max="110">{{tweet.text}}</a>
+	<a class="tweet" ng-href="https://twitter.com/jaybilas/status/{{tweet.id_str}}" target="_blank" data-fittext data-fittext-nl data-fittext-max="110">{{tweet.text}}</a>
 
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: {{counter * 10}}%;">
-            <span class="sr-only">60% Complete</span>
-        </div>
-    </div>
+	<div class="progress">
+		<div class="progress-bar" role="progressbar" style="width: {{counter * 10}}%;">
+			<span class="sr-only">60% Complete</span>
+		</div>
+	</div>
 
-    <!-- Angular JS -->
-    <!--<script type="text/javascript" src="js/angular.js"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<!-- Angular JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 
-    <!-- Vendor JS -->
-    <!--<script src="vendor/ngFitText/ng-FitText.js"></script>-->
-    <script src="vendor/ng-FitText.js"></script>
+	<!-- Vendor JS -->
+	<script src="vendor/ng-FitText.js"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="app/app.js"></script>
-    <script type="text/javascript" src="app/home/home.controller.js"></script>
-    <script type="text/javascript" src="app/data/tweets.factory.js"></script>
+	<!-- App JS -->
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/home/home.controller.js"></script>
+	<script type="text/javascript" src="app/data/tweets.factory.js"></script>
 
 </body>
 </html>
