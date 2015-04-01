@@ -1,0 +1,17 @@
+{
+  "name": "GottaGoToWork",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "description": "GottaGoToWork",
+  "author": {
+    "name": "Steven Follis",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.9.8",
+    "twit": "^1.1.20"
+  }
+}

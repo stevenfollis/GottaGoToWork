@@ -1,0 +1,36 @@
+﻿body {
+    background: #4C6083;
+}
+
+.tweet {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    text-shadow: 1px 1px 0px #D5481A, 2px 2px 0px #D5481A, 3px 3px 0px #D5481A, 4px 4px 0px #D5481A;
+    letter-spacing: 3px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+    .tweet:hover, .tweet:focus {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+.progress {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 0;
+}
+
+    .progress .progress-bar {
+        background-color: #D5481A;
+    }
