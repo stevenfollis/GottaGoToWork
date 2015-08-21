@@ -1,0 +1,14 @@
+{
+  "name": "GottaGoToWork",
+  "version": "0.0.1",
+  "description": "GottaGoToWork",
+  "main": "server.js",
+  "author": {
+    "name": "Steven Follis",
+    "email": "steven_follis@live.com"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "twit": "^2.1.0"
+  }
+}
